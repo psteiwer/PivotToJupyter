@@ -18,7 +18,7 @@ RUN iris start IRIS \
     && iris stop IRIS quietly
 
 RUN mkdir -p /usr/irissys/mgr/user/notebooks
-RUN python3 -m pip install notebook pandas matplotlib seaborn sqlalchemy-iris
+RUN python3 -m pip install notebook pandas matplotlib seaborn sqlalchemy-intersystems-iris
 
 COPY --chmod=+x entrypoint.sh /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
