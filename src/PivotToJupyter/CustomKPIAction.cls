@@ -139,7 +139,7 @@ ClassMethod GenerateNotebook(tNewTableName, tCurrFilterSpec) [ Language = python
                             "    target_numeric_col = None\n"
 
                             "# Step 2: Find best categorical column\n"
-                            "cat_cols = df.select_dtypes(include=['object', 'category']).columns\n"
+                            "cat_cols = df.select_dtypes(include=['string', 'category']).columns\n"
                             "cat_col_stats = [(col, df[col].nunique()) for col in cat_cols]\n"
                             "cat_col_stats.sort(key=lambda x: x[1])  # Sort by number of unique values\n"
 
