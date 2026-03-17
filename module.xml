@@ -4,7 +4,7 @@
     <Module>
       <Name>pivottojupyter</Name>
       <Description>Demo Custom Action for IRIS BI that converts Pivot results to new table to use inside Jupyter notebook</Description>
-      <Version>1.0.3</Version>
+      <Version>1.0.4</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="PivotToJupyter.PKG"/>
